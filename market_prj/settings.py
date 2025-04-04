@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&v92mhcf7-i!gvr06r14y2z^%y0%g-ih_dee&-d_cn43-_$qo$'
+SECRET_KEY = '%1f-vv58)2)+3nq61h_sdoyi117f!a#ei8r3ar5c!p+tli$lsd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mainapp',
+    'authapp',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +76,20 @@ WSGI_APPLICATION = 'market_prj.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    #'default': {
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    #},
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'market_prj_db',
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': 'prj_user',
+        'PASSWORD': 'prj_user',
+        'HOST': 'localhost',
+        'PORT': '5434',
     }
+
 }
 
 
@@ -111,10 +123,18 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
+AUTH_USER_MODEL = 'authapp.TravelUser'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
