@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainapp',
-    'authapp',
 ]
 
 MIDDLEWARE = [
@@ -87,7 +86,7 @@ DATABASES = {
         'USER': 'prj_user',
         'PASSWORD': 'prj_user',
         'HOST': 'localhost',
-        'PORT': '5434',
+        'PORT': '5432',
     }
 
 }
@@ -125,7 +124,6 @@ USE_L10N = True
 
 USE_TZ = False
 
-AUTH_USER_MODEL = 'authapp.TravelUser'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
