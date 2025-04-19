@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6449cc38-ec22-4033-b99e-102bfb3def80" name="Default Changelist" comment="Working version">
+      <change afterPath="$PROJECT_DIR$/adminapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_prj/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_prj/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_prj/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_prj/urls.py" afterDir="false" />
     </list>
@@ -291,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744902175386</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Working version">
+      <option name="closed" value="true" />
+      <created>1744919642817</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744919642817</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">

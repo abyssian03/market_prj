@@ -27,6 +27,7 @@ urlpatterns = [
     path('list_of_accommodations/', include('mainapp.urls', namespace='acc')),
     path('auth/', include('authapp.urls', namespace='auth')),
     path('', include('social_django.urls', namespace='social')),
+    path('admin/', include('adminapp.urls', namespace='admin')),
 ]
 
 if settings.DEBUG:
