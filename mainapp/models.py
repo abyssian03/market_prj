@@ -38,6 +38,9 @@ class Accommodation(models.Model):
                                  max_length=60, blank=True)
     is_active = models.BooleanField(verbose_name='активна', default=True)
 
+    def __str__(self):
+        return self.name
+
     @staticmethod
     def get_items():
         return Accommodation.objects.filter(is_active=True).order_by('country',
