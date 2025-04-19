@@ -7,6 +7,7 @@ from django.contrib.auth.models import AbstractUser
 class TravelUser(AbstractUser):
     avatar = models.ImageField(upload_to='users_avatars', blank=True)
     age = models.PositiveIntegerField(verbose_name='возраст', default=18)
+    email = models.EmailField(unique=True)
 
 
 class TravelUserProfile(models.Model):
