@@ -9,11 +9,17 @@
                 {{ object.category.name|title }}
                 {{ object.name|title }}
             </strong>
+            <br><br>
         </div>
         <div class="country_desc">
             <b>Описание</b>
             <p>{{ object.description }}</p>
             <br><br>
         </div>
+        <button>
+            <a href="{% url 'admin:country_update' object.pk %}">
+              редактировать
+            </a>
+        </button>
     </div>
 {% endblock %}

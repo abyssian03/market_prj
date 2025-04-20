@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6449cc38-ec22-4033-b99e-102bfb3def80" name="Default Changelist" comment="My version">
-      <change afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/country_read.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminapp/templates/adminapp/accommodations.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/accommodations.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminapp/templates/adminapp/countries.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/countries.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminapp/templates/adminapp/country_read.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminapp/templates/adminapp/country_read.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745094200431</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="My version">
+      <option name="closed" value="true" />
+      <created>1745147519685</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745147519685</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
