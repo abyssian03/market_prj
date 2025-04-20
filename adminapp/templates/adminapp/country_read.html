@@ -1,0 +1,19 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="country_read">
+        <div class="country_name">
+            Страна
+            <strong>
+                {{ object.category.name|title }}
+                {{ object.name|title }}
+            </strong>
+        </div>
+        <div class="country_desc">
+            <b>Описание</b>
+            <p>{{ object.description }}</p>
+            <br><br>
+        </div>
+    </div>
+{% endblock %}

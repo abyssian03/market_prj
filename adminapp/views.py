@@ -97,7 +97,7 @@ def user_delete(request, pk):
 def countries(request):
     title = 'админка/страны'
 
-    countries_list = ListOfCountries.objects.all()
+    countries_list = ListOfCountries.objects.all().order_by('-is_active', 'name')
 
     content = {
         'title': title,
@@ -128,6 +128,10 @@ class CountryUpdateView(UpdateView):
 
         return context
 
+# админка - карточка страны
+class CountryDetailView(DetailView):
+    model = ListOfCountries
+    template_name = 'adminapp/country_read.html'
 
 # админка - удаление страны
 class CountryDeleteView(DeleteView):
@@ -148,8 +152,7 @@ def accommodations(request, pk):
     title = 'админка/размещение'
 
     country = get_object_or_404(ListOfCountries, pk=pk)
-    accommodation_list = Accommodation.objects.filter(
-        country__id=pk).order_by('name')
+    accommodation_list = Accommodation.objects.filter(country__id=pk).order_by('-is_active', 'name')
 
     content = {
         'title': title,

@@ -20,6 +20,10 @@
         </div>
         <div class="category_actions">
 		  <button>
+            <a href="{% url 'admin:country_read' object.pk %}">
+              подробнее
+            </a>
+		  <button>
 			<a href="{% url 'admin:accommodations' object.pk %}">
 			  размещения
 			</a>
@@ -34,9 +38,6 @@
               удалить
             </a>
           </button>
-        </div>
-        <div class="category_desc">
-          {{ object.description|title }}
         </div>
       </div>
     {% endfor%}

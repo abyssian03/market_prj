@@ -9,10 +9,6 @@ class TravelUser(AbstractUser):
     age = models.PositiveIntegerField(verbose_name='возраст', default=18)
     email = models.EmailField(unique=True)
 
-    class Meta:
-        ordering = ['-is_active']
-
-
 class TravelUserProfile(models.Model):
     MALE = 'M'
     FEMALE = 'W'

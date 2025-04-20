@@ -14,6 +14,8 @@ urlpatterns = [
      name='country_create'),
     path('countries/update/<int:pk>/', adminapp.CountryUpdateView.as_view(),
      name='country_update'),
+    path('countries/read/<int:pk>/', adminapp.CountryDetailView.as_view(),
+     name='country_read'),
     path('countries/delete/<int:pk>/', adminapp.CountryDeleteView.as_view(),
      name='country_delete'),
     path('accommodation/read/countries/<int:pk>/', adminapp.accommodations,
